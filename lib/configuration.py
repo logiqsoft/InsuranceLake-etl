@@ -92,13 +92,13 @@ def get_local_configuration(environment: str, local_mapping: dict = None) -> dic
 
                 # If you use Bitbucket Cloud or any other supported Codestar provider, specify the
                 # Codestar connection ARN
-                CODESTAR_CONNECTION_ARN: '',
+                CODESTAR_CONNECTION_ARN: 'arn:aws:codestar-connections:us-east-2:307946661005:connection/9af7474c-c5a4-4844-bf52-93488f45ea4d',
 
                 # Codestar repository owner or workspace name if using Bitbucket Cloud
-                CODESTAR_REPOSITORY_OWNER_NAME: '',
+                CODESTAR_REPOSITORY_OWNER_NAME: 'logiqsoft',
 
                 # Leave empty if you do not use Codestar
-                CODESTAR_REPOSITORY_NAME: '',
+                CODESTAR_REPOSITORY_NAME: 'insurancelake-etl',
 
                 # Use only if your repository is already in CodecCommit, otherwise leave empty!
                 # Use your CodeCommit repo name here
@@ -107,7 +107,7 @@ def get_local_configuration(environment: str, local_mapping: dict = None) -> dic
                 # Use only if you do NOT use Github or CodeCommit and need to mirror your repository
                 # Name your CodeCommit mirror repo here (recommend matching your external repo)
                 # Leave empty if you use Github or your repository is in CodeCommit already
-                CODECOMMIT_MIRROR_REPOSITORY_NAME: 'aws-insurancelake-etl',
+                CODECOMMIT_MIRROR_REPOSITORY_NAME: '',
 
                 # This is used in the Logical Id of CloudFormation resources.
                 # We recommend Capital case for consistency, e.g. DataLakeCdkBlog
